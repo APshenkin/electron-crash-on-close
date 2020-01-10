@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "newline-after-var": [1, "always"],
+    "newline-before-return": 1,
+    "react/jsx-max-props-per-line": [2, {"maximum": 4}],
+    "react/sort-prop-types": 0,
+    "react/prop-types": [2, { "ignore": ["children"] }],
+    "consistent-return": 0,
+    "react/no-children-prop" : 0,
+    "react/no-find-dom-node": 0,
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "info",
+          "warn",
+          "error"
+        ]
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\\.(styl)$"
+    ],
+    "react": {
+      "version": "16.0"
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "mocha": true
+  }
+}

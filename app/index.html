@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TEST</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:;script-src 'self' 'unsafe-inline';worker-src blob:;style-src 'self' 'unsafe-inline';connect-src 'self'">
+  </head>
+  <body>
+    <div id="drag-area"></div>
+    <div id="app"></div>
+    <div id="modal"></div>
+    <script src="./app.js" data-container="#app" data-modal="#modal"></script>
+    <script>
+      if (process.platform === 'darwin') {
+        document.body.classList.add("isMac");
+      }
+    </script>
+  </body>
+</html>
