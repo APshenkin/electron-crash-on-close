@@ -1,0 +1,1 @@
+# electron-crash-on-close
