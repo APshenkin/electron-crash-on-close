@@ -68,7 +68,7 @@
     "@svgr/cli": "^4.0.3",
     "babel-eslint": "^10.0.3",
     "browser-sync": "^2.26.7",
-    "electron": "^7.1.8",
+    "electron": "^18.3.7",
     "electron-builder": "^22.2.0",
     "electron-devtools-installer": "^2.2.4",
     "electron-notarize": "^0.2.1",
